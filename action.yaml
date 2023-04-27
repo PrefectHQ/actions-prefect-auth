@@ -1,0 +1,33 @@
+---
+name: Auth into Prefect Cloud
+author: PrefectHQ
+description: Authenticate with Prefect Cloud to run commands.
+branding:
+  icon: upload-cloud
+  color: blue
+
+inputs:
+  prefect-api-key:
+    description:
+      API Key to authenticate with Prefect.
+    required: true
+
+  prefect-workspace:
+    description:
+      Full handle of workspace, in format
+      `<account_handle>/<workspace_handle>`.
+    required: true
+
+runs:
+  using: composite
+  steps:
+    - id: install-prefect-locally
+      shell: bash
+      run: pip install -q prefect
+
+    - id: prefect-cloud-login
+      run: |
+        prefect cloud login \
+        --key ${{ inputs.prefect-api-key }} \
+        --workspace ${{ inputs.prefect-workspace }}
+      shell: bash
