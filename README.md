@@ -19,7 +19,7 @@ A GitHub Action for authenticating into Prefect Cloud
 ## Examples
 
 ### Basic Login
-Login to Prefect Cloud using stored GHA Secrets
+Log into Prefect Cloud using stored GHA Secrets
 
 ```yaml
 name: Log Into Prefect Cloud
