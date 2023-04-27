@@ -2,7 +2,7 @@
 
 ## Details
 
-A GitHub Action for authenticating into Prefect Cloud
+A GitHub Action for authenticating into [Prefect Cloud](https://docs.prefect.io/latest/cloud/)
 
 ## Requirements
 
