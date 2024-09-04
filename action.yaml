@@ -23,7 +23,7 @@ runs:
   steps:
     - id: install-prefect-locally
       shell: bash
-      run: pip install -q "prefect<3"
+      run: pip install -q "prefect>=3,<4"
 
     - id: prefect-cloud-login
       run: |

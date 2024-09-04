@@ -38,7 +38,7 @@ jobs:
           python-version: '3.10'
       
       - name: Prefect Auth
-        uses: PrefectHQ/actions-prefect-auth@v1
+        uses: PrefectHQ/actions-prefect-auth@v2
         with:
           prefect-api-key: ${{ secrets.PREFECT_API_KEY }}
           prefect-workspace: ${{ secrets.PREFECT_WORKSPACE }}
@@ -63,13 +63,13 @@ jobs:
           python-version: '3.10'
 
       - name: Prefect Auth
-        uses: PrefectHQ/actions-prefect-auth@v1
+        uses: PrefectHQ/actions-prefect-auth@v2
         with:
           prefect-api-key: ${{ secrets.PREFECT_API_KEY }}
           prefect-workspace: ${{ secrets.PREFECT_WORKSPACE }}
 
       - name: Run Prefect Deploy
-        uses: PrefectHQ/actions-prefect-deploy@v1
+        uses: PrefectHQ/actions-prefect-deploy@v4
         with:
           requirements-file-path: ./examples/simple/requirements.txt
           entrypoint: ./examples/simple/flow.py:call_api
