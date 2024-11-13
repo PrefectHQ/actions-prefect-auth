@@ -27,7 +27,7 @@ runs:
 
     - id: prefect-cloud-login
       run: |
-        prefect cloud login \
+        prefect --no-prompt cloud login \
         --key ${{ inputs.prefect-api-key }} \
         --workspace ${{ inputs.prefect-workspace }}
       shell: bash
