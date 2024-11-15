@@ -1,5 +1,5 @@
 # Deprecation Notice
-- This github action is deprecated and should no longer be used for authenticating against Prefect Cloud.  To authenticate against Prefect Cloud in your workflows, simply set two environment variables (`PREFECT_API_KEY` & `PREFECT_API_URL`) as described [in the docs](https://docs.prefect.io/3.0/deploy/infrastructure-concepts/deploy-ci-cd#repository-secrets).
+- This GitHub action is deprecated and should no longer be used for authenticating against Prefect Cloud. To authenticate against Prefect Cloud in your workflows, simply set two environment variables (`PREFECT_API_KEY` & `PREFECT_API_URL`) as described [in the docs](https://docs.prefect.io/3.0/deploy/infrastructure-concepts/deploy-ci-cd#repository-secrets).
 
 # actions-prefect-auth
 
